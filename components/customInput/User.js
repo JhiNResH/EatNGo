@@ -18,6 +18,7 @@ const User = ({ value, setValue, placeholder, secureTextEntry }) => {
 const styles = StyleSheet.create({
     container: {
         backgroundColor: 'white',
+        padding: 15,
         width: '100%',
 
         borderColor: '#e8e8e8',

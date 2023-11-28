@@ -1,7 +1,8 @@
 import { StyleSheet, Text, View, Image, useWindowDimensions } from 'react-native'
 import React, { useState } from 'react'
-import User from '../../components/customInput/User';
+import User from '../../components/customInput';
 import Logo from '../../assets/images/possible.jpg';
+import CustomButton from '../../components/customButton';
 
 
 const Login = () => {
@@ -9,6 +10,14 @@ const Login = () => {
   const [password, setPassword] = useState('');
 
   const { height } = useWindowDimensions();
+
+  const SignInPressed = () => {
+    console.warn('Sign In');
+  }
+
+  const ForgotPasswordPressed = () => {
+    console.warn('Forgot Password');
+  }
 
   return (
     <View style={styles.root}>
@@ -28,7 +37,15 @@ const Login = () => {
         //secureTextEntry={true} => It's the same
         secureTextEntry
       />
-
+      <CustomButton
+        text="Sign In"
+        onPress={SignInPressed}
+      />
+      <CustomButton
+        text="Forgot Password?"
+        onPress={ForgotPasswordPressed}
+        type="Tertiary"
+      />
     </View>
   );
 };
