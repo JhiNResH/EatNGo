@@ -64,3 +64,10 @@ yarn-error.log
 
 # testing
 /coverage
+
+android
+ios
+.eslintrc.js
+babel.config.js
+gemfile
+gemfile.lock
