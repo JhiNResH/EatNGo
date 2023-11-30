@@ -4,6 +4,8 @@ import { SafeAreaView, StyleSheet, Text, View, } from 'react-native';
 
 import Login from './src/Login/Login';
 import Signup from './src/Signup/Signup';
+import ConfirmEmail from './components/ConfirmEmail/ConfirmEmail';
+
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -15,7 +17,7 @@ function App(): JSX.Element {
 
   return (
     <SafeAreaView>
-      <Signup />
+      <ConfirmEmail />
     </SafeAreaView>
   );
 }
