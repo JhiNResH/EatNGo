@@ -1,8 +1,8 @@
 import { StyleSheet, Text, View, ScrollView } from 'react-native'
 import React, { useState } from 'react'
-import User from '../../components/customInput';
-import CustomButton from '../../components/customButton';
-import SocialSignInButtons from '../../components/SocialSignInButtons.js/SocialSignInButtons';
+import User from '../customInput';
+import CustomButton from '../customButton';
+import SocialSignInButtons from '../SocialSignInButtons.js/SocialSignInButtons';
 import { text } from 'body-parser';
 
 
